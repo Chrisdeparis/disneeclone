@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { auth, provider } from '../firebase'
 
 const Nav = styled.nav`
     /* position:fixed; */
@@ -46,6 +47,7 @@ const NavMenu = styled.div`
         display: flex;
         align-items: center;
         padding: 0 12px;
+        cursor:pointer;
 
         img {
             height: 20px;
@@ -92,9 +94,9 @@ const NavMenu = styled.div`
     }
 
     
-    /* @media (max-width: 768px) {
+    @media (max-width: 768px) {
         display:none;
-    } */
+    }
 `;
 
 const Login = styled.a`
@@ -105,6 +107,7 @@ const Login = styled.a`
     border:1px solid #f9f9f9;
     border-radius:4px;
     transition: all .2s ease 0s;
+    cursor:pointer;
 
     &:hover {
         background-color: #f9f9f9;
@@ -113,6 +116,13 @@ const Login = styled.a`
     }
 `;
 function Header() {
+    const handleAuth = () => {
+        auth.signInWithPopup(provider).then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            alert(error.message);
+        })
+    }
     return (
         <Nav>
             <Logo>
@@ -144,7 +154,7 @@ function Header() {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <Login>Login</Login>
+            <Login onClick={handleAuth}>Login</Login>
             
         </Nav>
     )
