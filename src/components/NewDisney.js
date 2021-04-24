@@ -2,29 +2,29 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const Recommends = (props) => {
+const NewDisney = (props) => {
     return (
         <Container>
-            <h4>Recommended for you</h4>
+            <h4>New to Disney</h4>
             <Content>
               <Wrap>
                 <Link to='/'>
-                    <img className="rec" src="https://picsum.photos/id/1044/220/220?grayscale" alt=""/>
+                    <img className="rec" src="https://picsum.photos/id/237/220/220?grayscale" alt=""/>
                 </Link>
               </Wrap>
               <Wrap>
                 <Link to='/'>
-                    <img className="rec" src="https://picsum.photos/id/1044/220/220?grayscale" alt=""/>
+                    <img className="rec" src="https://picsum.photos/id/237/220/220?grayscale" alt=""/>
                 </Link>
               </Wrap>
               <Wrap>
                 <Link to='/'>
-                    <img className="rec" src="https://picsum.photos/id/1044/220/220?grayscale" alt=""/>
+                    <img className="rec" src="https://picsum.photos/id/237/220/220?grayscale" alt=""/>
                 </Link>
               </Wrap>
               <Wrap>
                 <Link to='/'>
-                    <img className="rec" src="https://picsum.photos/id/1044/220/220?grayscale" alt=""/>
+                    <img className="rec" src="https://picsum.photos/id/237/220/220?grayscale" alt=""/>
                 </Link>
               </Wrap>
                
@@ -74,4 +74,4 @@ const Wrap = styled.div`
     }
 `;
 
-export default Recommends
+export default NewDisney
