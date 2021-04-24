@@ -66,9 +66,9 @@ const Header = (props) => {
                             <img src="/images/home-icon.svg" alt="HOME"/>
                             <span>HOME</span>
                         </a>
-                        <a href="/recherche">
+                        <a href="/search">
                             <img src="/images/search-icon.svg" alt="SEARCH"/>
-                            <span>RECHERCHE</span>
+                            <span>SEARCH</span>
                         </a>
                         <a href="/watchlist">
                             <img src="/images/watchlist-icon.svg" alt="WATCHLIST"/>
@@ -206,18 +206,18 @@ const Login = styled.a`
 `;
 
 const DropDown = styled.div`
-    position: absolute;
-    top: 48px;
-    right: 0;
-    background: rgb(19, 19, 19);
-    border:1px solid rgba(151, 151, 151, 0.34);
-    border-radius:4px;
-    box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
-    padding: 10px;
-    font-size:14px;
-    letter-spacing: 3px;
-    width: 120px;
-    opacity:0;
+  position: absolute;
+  top: 28px;
+  right: 0px;
+  background: rgb(19, 19, 19);
+  border: 1px solid rgba(151, 151, 151, 0.34);
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  width: 120px;
+  opacity: 0;
 `;
 
 const UserImg = styled.img`    
